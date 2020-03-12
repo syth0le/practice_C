@@ -1,0 +1,17 @@
+/*
+ ============================================================================
+ Name        : calc_on_C.c
+ Author      : sythole
+ Version     :
+ Copyright   : my and only my
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	puts("zdarova"); /* prints zdarova */
+	return EXIT_SUCCESS;
+}

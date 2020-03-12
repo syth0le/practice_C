@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : Project_00.c
+ Author      : Mater Joda
+ Version     :
+ Copyright   : Protected by Force
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+char string[40];
+
+int main(void) {
+    setvbuf(stdout, NULL, _IONBF, 0);
+    setvbuf(stderr, NULL, _IONBF, 0);
+	puts("You treveler I great!"); /* prints You treveler I great! */
+	gets(string);
+	puts(string);
+	return EXIT_SUCCESS;
+}

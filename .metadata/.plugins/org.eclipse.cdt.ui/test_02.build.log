@@ -1,0 +1,16 @@
+14:33:01 **** Incremental Build of configuration Debug for project test_02 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_02.o" "..\\src\\test_02.c" 
+..\src\test_02.c: In function 'main':
+..\src\test_02.c:21:1: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+ while (r!='d');{
+ ^~~~~
+..\src\test_02.c:21:16: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+ while (r!='d');{
+                ^
+gcc -o test_02.exe "src\\test_02.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file test_02.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+14:33:01 Build Failed. 1 errors, 1 warnings. (took 769ms)
+

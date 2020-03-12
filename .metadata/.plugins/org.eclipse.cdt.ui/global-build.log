@@ -1,0 +1,12 @@
+14:08:06 **** Rebuild of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:20:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+..\src\calc_on_C.c:19:9: warning: unused variable 'ist0' [-Wunused-variable]
+     int ist0;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
