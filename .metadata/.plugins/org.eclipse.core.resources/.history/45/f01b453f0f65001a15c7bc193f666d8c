@@ -93,7 +93,7 @@ int main(void) {
                         scanf("%f", &vector2[i]);
                     }
                     switch (sign) {
-                        case '+':
+                        case "+":
                             printf("\n Result: ("); // thinking about different types result output in console
                             for (int i = 0; i < size; i++){
                                 printf("%.2f", vector1[i] + vector2[i]);
@@ -102,7 +102,7 @@ int main(void) {
                             printf(")\n\n");
 
                             break;
-                        case '-':
+                        case "-":
                             printf("\n Result: ("); // thinking about different types result output in console
                             for (int i = 0; i < size; i++){
                                 printf("%.2f", vector1[i] + vector2[i]);
@@ -110,7 +110,7 @@ int main(void) {
                             }
                             printf(")\n\n");
                             break;
-                        case '*':
+                        case "*":
                             for (int i = 0; i < size; i++) {
                             result += vector1[i] * vector2[i];
                             }

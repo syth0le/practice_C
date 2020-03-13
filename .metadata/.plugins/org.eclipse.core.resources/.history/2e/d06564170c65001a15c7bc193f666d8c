@@ -86,46 +86,40 @@ int main(void) {
                 printf("'-'-vectors subtraction \n");
                 printf("'*'- scalar product of vectors \n");
                 scanf("%c%*c", &sign);
-                if (sign == '+' || sign == '-' || sign == '*'){
-                    vector2 = calloc(size,sizeof(float));
-                    for (int i = 0; i < size; i++) {
-                        printf("Enter cords second vector (b): "); // rewrite all printfs and delete all otstupi
-                        scanf("%f", &vector2[i]);
-                    }
-                    switch (sign) {
-                        case '+':
-                            printf("\n Result: ("); // thinking about different types result output in console
-                            for (int i = 0; i < size; i++){
-                                printf("%.2f", vector1[i] + vector2[i]);
-                                if (i != size-1) printf(" ");
-                            }
-                            printf(")\n\n");
+                vector2 = calloc(size,sizeof(float));
+                for (int i = 0; i < size; i++) {
+                    printf("Enter cords second vector (b): "); // rewrite all printfs and delete all otstupi
+                    scanf("%f", &vector2[i]);
+                }
+                switch (sign) {
+                    case "+":
+                        printf("\n Result: ("); // thinking about different types result output in console
+                        for (int i = 0; i < size; i++){
+                            printf("%.2f", vector1[i] + vector2[i]);
+                            if (i != size-1) printf(" ");
+                        }
+                        printf(")\n\n");
 
-                            break;
-                        case '-':
-                            printf("\n Result: ("); // thinking about different types result output in console
-                            for (int i = 0; i < size; i++){
-                                printf("%.2f", vector1[i] + vector2[i]);
-                                if (i != size-1) printf(" ");
-                            }
-                            printf(")\n\n");
-                            break;
-                        case '*':
-                            for (int i = 0; i < size; i++) {
-                            result += vector1[i] * vector2[i];
-                            }
-                            printf("\n Result: %.2f\n\n", result);
-                            break;
-                    }
+                        break;
+                    case "-":
+                        printf("\n Result: ("); // thinking about different types result output in console
+                        for (int i = 0; i < size; i++){
+                            printf("%.2f", vector1[i] + vector2[i]);
+                            if (i != size-1) printf(" ");
+                        }
+                        printf(")\n\n");
+                        break;
+                    case "*":
+                        for (int i = 0; i < size; i++) {
+                        result += vector1[i] * vector2[i];
+                                       }
+                                       printf("\n Result: %.2f\n\n", result);
+                        break;
                 }
-                else{
-                    printf("unsupportable sign. \nPlease, type another from this range: +, -, *, /, ^, !.\n");
-                    printf("'+'-vectors addition, \n");
-                    printf("'-'-vectors subtraction \n");
-                    printf("'*'- scalar product of vectors \n");
-                    sign = '$';
-                }
+
+
             }
+
         }
         else{
             printf("Unsupportable mode type.\nChoose from this list:");
