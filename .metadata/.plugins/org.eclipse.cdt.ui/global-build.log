@@ -1,12 +1,98 @@
-14:08:06 **** Rebuild of configuration Debug for project calc_on_C ****
+07:35:23 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+07:35:32 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+07:41:22 **** Incremental Build of configuration Debug for project calc_on_C ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
 ..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:70:26: warning: statement with no effect [-Wunused-value]
+                     sign == '$';
+                     ~~~~~^~~~~~
+..\src\calc_on_C.c:75:9: error: 'else' without a previous 'if'
+         else if (choose == 2){
+         ^~~~
+..\src\calc_on_C.c:24:20: warning: unused variable 'vector2' [-Wunused-variable]
+     float vector1, vector2;
+                    ^~~~~~~
+..\src\calc_on_C.c:24:11: warning: unused variable 'vector1' [-Wunused-variable]
+     float vector1, vector2;
+           ^~~~~~~
+..\src\calc_on_C.c:23:9: warning: unused variable 'size' [-Wunused-variable]
+     int size; // var for using size of memory in vector operations
+         ^~~~
 ..\src\calc_on_C.c:20:9: warning: unused variable 'ist1' [-Wunused-variable]
      int ist1;  // var for cycle 'for'
          ^~~~
-..\src\calc_on_C.c:19:9: warning: unused variable 'ist0' [-Wunused-variable]
-     int ist0;  // var for cycle 'for'
+..\src\calc_on_C.c: At top level:
+..\src\calc_on_C.c:89:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+07:42:05 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:75:9: error: 'else' without a previous 'if'
+         else if (choose == 2){
+         ^~~~
+..\src\calc_on_C.c:24:20: warning: unused variable 'vector2' [-Wunused-variable]
+     float vector1, vector2;
+                    ^~~~~~~
+..\src\calc_on_C.c:24:11: warning: unused variable 'vector1' [-Wunused-variable]
+     float vector1, vector2;
+           ^~~~~~~
+..\src\calc_on_C.c:23:9: warning: unused variable 'size' [-Wunused-variable]
+     int size; // var for using size of memory in vector operations
+         ^~~~
+..\src\calc_on_C.c:20:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+..\src\calc_on_C.c: At top level:
+..\src\calc_on_C.c:89:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+07:42:30 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:75:9: error: 'else' without a previous 'if'
+         else if (choose == 2){
+         ^~~~
+..\src\calc_on_C.c:24:20: warning: unused variable 'vector2' [-Wunused-variable]
+     float vector1, vector2;
+                    ^~~~~~~
+..\src\calc_on_C.c:24:11: warning: unused variable 'vector1' [-Wunused-variable]
+     float vector1, vector2;
+           ^~~~~~~
+..\src\calc_on_C.c:23:9: warning: unused variable 'size' [-Wunused-variable]
+     int size; // var for using size of memory in vector operations
+         ^~~~
+..\src\calc_on_C.c:20:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+07:43:37 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:24:20: warning: unused variable 'vector2' [-Wunused-variable]
+     float vector1, vector2;
+                    ^~~~~~~
+..\src\calc_on_C.c:24:11: warning: unused variable 'vector1' [-Wunused-variable]
+     float vector1, vector2;
+           ^~~~~~~
+..\src\calc_on_C.c:23:9: warning: unused variable 'size' [-Wunused-variable]
+     int size; // var for using size of memory in vector operations
+         ^~~~
+..\src\calc_on_C.c:20:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
          ^~~~
 gcc -o calc_on_C.exe "src\\calc_on_C.o" 
-Info: Nothing to build for calc_on_C
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+07:43:45 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 

@@ -21,7 +21,7 @@ int main(void) {
     int turn_on = 1; // var of 1-'on' or 0-'off' program
     char sign = '$';
     int size; // var for using size of memory in vector operations
-    float *vector1, *vector2;
+    float vector1, vector2;
     while(turn_on != 0){
         printf("Choose calc mode:");
         printf("1 - num. operations, 2 - vector operations");
@@ -66,34 +66,16 @@ int main(void) {
                         var1 = var2;}
                     printf("%.2f\n", var2);}
                 else {
-                    printf("unsupportable sign.\nPlease, type another from this range: +, -, *, /, ^, !.\n");
+                    printf("unsupportable sign. Please, type another from this range: +, -, *, /, ^, !.\n");
                     sign = '$';
                 }
-            }
-        }
+                }
+                }
         else if (choose == 2){
-            printf("Enter razmernost vectora: ");????????????????????????????????????????????
-                   scanf("%d", &size);
-                   vector1 = calloc(size,sizeof(float));
-                   for (int i = 0; i < size; i++) {
-                       printf("Enter cords first vector (a): ");
-                       scanf("%f", &vector1[i]);
-                   }
-//there must be cycle while for sign proverki( work with sign var like in num operations
-                   vector2 = calloc(size,sizeof(float));
-
-                   for (int i = 0; i < size; i++) {
-                       printf("Enter cords second vector (b): "); // rewrite all printfs and delete all otstupi
-                       scanf("%f", &vector2[i]);
-                   }
-
-
-
-
 
         }
         else{
-            printf("Unsupportable mode type.\nChoose from this list:");
+            printf("Unsupportable mode type.Choose from this list:");
             printf("1 - num. operations, 2 - vector operations");
         }
 
@@ -102,4 +84,5 @@ int main(void) {
         printf("If u want to continue type 1, but if u want to exit type 0:");
         scanf("%i", &turn_on);
     }
+
 }

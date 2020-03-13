@@ -83,7 +83,7 @@ int main(void) {
                    vector2 = calloc(size,sizeof(float));
 
                    for (int i = 0; i < size; i++) {
-                       printf("Enter cords second vector (b): "); // rewrite all printfs and delete all otstupi
+                       printf("Enter cords second vector (b): "); // rewrite all printfs
                        scanf("%f", &vector2[i]);
                    }
 

@@ -79,11 +79,11 @@ int main(void) {
                        printf("Enter cords first vector (a): ");
                        scanf("%f", &vector1[i]);
                    }
-//there must be cycle while for sign proverki( work with sign var like in num operations
+//there must be cycle while for sign proverki
                    vector2 = calloc(size,sizeof(float));
 
                    for (int i = 0; i < size; i++) {
-                       printf("Enter cords second vector (b): "); // rewrite all printfs and delete all otstupi
+                       printf("Enter cords second vector (b): ");
                        scanf("%f", &vector2[i]);
                    }
 

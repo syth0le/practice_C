@@ -1,6 +1,7 @@
 LaunchTargetManager/configs/123\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/123.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/321.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/calc_on_C.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/my_f1rst_test.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/test_01.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/test_02.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
@@ -17,6 +18,8 @@ org.eclipse.launchbar.core.descriptorType.default\:123.exe/activeLaunchTarget=or
 org.eclipse.launchbar.core.descriptorType.default\:321.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Project_00\ Debug/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Project_00\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:calc_on_C.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:calc_on_C.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:my_f1rst_test.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:my_f1rst_test.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:test01\ Debug/activeLaunchMode=debug
