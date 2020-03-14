@@ -1,4 +1,4 @@
-12:44:36 **** Incremental Build of configuration Debug for project calc_on_C ****
+10:19:49 **** Incremental Build of configuration Debug for project calc_on_C ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
 ..\src\calc_on_C.c: In function 'main':
@@ -7,5 +7,5 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_
          ^~~~
 gcc -o calc_on_C.exe "src\\calc_on_C.o" 
 
-12:44:37 Build Finished. 0 errors, 1 warnings. (took 769ms)
+10:19:49 Build Finished. 0 errors, 1 warnings. (took 554ms)
 

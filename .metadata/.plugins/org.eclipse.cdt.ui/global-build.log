@@ -1,20 +1,4 @@
-12:43:58 **** Incremental Build of configuration Debug for project calc_on_C ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
-..\src\calc_on_C.c: In function 'main':
-..\src\calc_on_C.c:96:25: error: case label does not reduce to an integer constant
-                         case "+":
-                         ^~~~
-..\src\calc_on_C.c:105:25: error: case label does not reduce to an integer constant
-                         case "-":
-                         ^~~~
-..\src\calc_on_C.c:113:25: error: case label does not reduce to an integer constant
-                         case "*":
-                         ^~~~
-..\src\calc_on_C.c:20:9: warning: unused variable 'ist1' [-Wunused-variable]
-     int ist1;  // var for cycle 'for'
-         ^~~~
-12:44:36 **** Incremental Build of configuration Debug for project calc_on_C ****
+10:19:49 **** Incremental Build of configuration Debug for project calc_on_C ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
 ..\src\calc_on_C.c: In function 'main':

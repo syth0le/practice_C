@@ -73,7 +73,7 @@ int main(void) {
         }
         else if (choose == 2){
             printf("Type vector's size: ");
-            scanf("%i", &size);
+            scanf("%d", &size);
             vector1 = calloc(size,sizeof(float));
             for (int i = 0; i < size; i++) {
                 printf("Enter cords first vector (a): ");
@@ -132,6 +132,8 @@ int main(void) {
         }
         free(vector1);
         free(vector2);
+
+
         printf("If u want to continue type 1, but if u want to exit type 0:");
         scanf("%i", &turn_on);
     }

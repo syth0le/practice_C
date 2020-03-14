@@ -73,7 +73,7 @@ int main(void) {
         }
         else if (choose == 2){
             printf("Type vector's size: ");
-            scanf("%i", &size);
+            scanf("%d", &size);
             vector1 = calloc(size,sizeof(float));
             for (int i = 0; i < size; i++) {
                 printf("Enter cords first vector (a): ");
@@ -111,7 +111,7 @@ int main(void) {
                             break;
                         case '*':
                             for (int i = 0; i < size; i++) {
-                                result += vector1[i] * vector2[i];
+                            result += vector1[i] * vector2[i];
                             }
                             printf("\n Result: %.2f\n\n", result);
                             break;
@@ -130,8 +130,9 @@ int main(void) {
             printf("Unsupportable mode type.\nChoose from this list:");
             printf("1 - num. operations, 2 - vector operations");
         }
-        free(vector1);
-        free(vector2);
+
+
+
         printf("If u want to continue type 1, but if u want to exit type 0:");
         scanf("%i", &turn_on);
     }
