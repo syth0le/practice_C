@@ -4,15 +4,12 @@
  Author      : syth0le
  Version     : 2.0
  Copyright   : my and only my
- Description : Calc on C.
- In 2nd version of program appears opportunity to do vector's calculations.
- You can choose work mode (1 - num.operations, 2- vector operations)
- In num. mode this calc can make different operations.
- There are multiplication'*', division'/', addition'+', subtraction'-', exponentiation'^', factorial'!' are supported.
+ Description : Calc on C. This calc can make different operations.
+ There are multiplication'*', division'/', addition'+', subtraction'-', exponentiation'^', factorial'!'.
  In this program realized function of cooperation with users.
  You can continue using calc or exit him, when request will be appeared.
- Vector's mode supporting using different cord.systems in calculation operations.
- There are presented different vector operations such as vectors addition, vectors subtraction, scalar product of vectors.
+ In 2nd version of program appears opportunity to do vector's calculations.
+ You can choose work mode (1 - num.operations, 2- vector operations)
  ============================================================================
  */
 
