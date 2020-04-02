@@ -35,3 +35,604 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_
          ^~~~
 gcc -o calc_on_C.exe "src\\calc_on_C.o" 
 Info: Nothing to build for calc_on_C
+19:06:29 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:10:46 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:11:41 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:11:47 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:12:12 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:12:46 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:14:09 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:14:16 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:15:19 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:15:24 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:20:05 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+                 printf("Enter",i, "cords of vector (a): ", i," - ");
+                        ^~~~~~~
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:21:58 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+                 printf("Enter","%.2f" ,i ,"cords of vector (a): ", i," - ");
+                        ^~~~~~~
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:22:07 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:23:39 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+                 printf("Enter","%.2f" ,i ,"cords of vector (a): ", i," - ");
+                        ^~~~~~~
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:25:51 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+                 printf("Enter","%.2f" ,i ,"cords of vector (a): ", i," - ");
+                        ^~~~~~~
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:26:51 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+                 printf("Enter cords of vector (a): ", i," - ");
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\calc_on_C.c:83:24: warning: too many arguments for format [-Wformat-extra-args]
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:28:12 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:83:24: warning: missing terminating " character
+                 printf("Enter cords of vector (a): );
+                        ^
+..\src\calc_on_C.c:83:24: error: missing terminating " character
+                 printf("Enter cords of vector (a): );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\calc_on_C.c:84:32: error: expected ')' before ';' token
+                 printf("%i", i);
+                                ^
+                                )
+..\src\calc_on_C.c:84:17: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+                 printf("%i", i);
+                 ^~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:16:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'int'
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:86:42: error: expected ';' before '}' token
+                 scanf("%f", &vector1[i]);
+                                          ^
+                                          ;
+             }
+             ~                             
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+19:28:32 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:83:24: warning: missing terminating " character
+                 printf("Enter cords of vector (a): );
+                        ^
+..\src\calc_on_C.c:83:24: error: missing terminating " character
+                 printf("Enter cords of vector (a): );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\calc_on_C.c:84:24: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+                 printf(i);
+                        ^
+In file included from ..\src\calc_on_C.c:16:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'int'
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:84:26: error: expected ')' before ';' token
+                 printf(i);
+                          ^
+                          )
+..\src\calc_on_C.c:84:17: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+                 printf(i);
+                 ^~~~~~~~~
+In file included from ..\src\calc_on_C.c:16:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'int'
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:86:42: error: expected ';' before '}' token
+                 scanf("%f", &vector1[i]);
+                                          ^
+                                          ;
+             }
+             ~                             
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+19:28:46 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:83:24: warning: missing terminating " character
+                 printf("Enter cords of vector (a): );
+                        ^
+..\src\calc_on_C.c:83:24: error: missing terminating " character
+                 printf("Enter cords of vector (a): );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\calc_on_C.c:84:32: error: expected ')' before ';' token
+                 printf("%i", i);
+                                ^
+                                )
+..\src\calc_on_C.c:84:17: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+                 printf("%i", i);
+                 ^~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:16:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'int'
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:86:42: error: expected ';' before '}' token
+                 scanf("%f", &vector1[i]);
+                                          ^
+                                          ;
+             }
+             ~                             
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+19:28:57 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:83:24: warning: missing terminating " character
+                 printf("Enter cords of vector (a): );
+                        ^
+..\src\calc_on_C.c:83:24: error: missing terminating " character
+                 printf("Enter cords of vector (a): );
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\calc_on_C.c:84:26: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+                 printf("%i", &i);
+                         ~^   ~~
+                         %n
+..\src\calc_on_C.c:84:26: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+                 printf("%i", &i);
+                         ~^   ~~
+                         %n
+..\src\calc_on_C.c:84:33: error: expected ')' before ';' token
+                 printf("%i", &i);
+                                 ^
+                                 )
+..\src\calc_on_C.c:84:17: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+                 printf("%i", &i);
+                 ^~~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:16:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'int'
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:86:42: error: expected ';' before '}' token
+                 scanf("%f", &vector1[i]);
+                                          ^
+                                          ;
+             }
+             ~                             
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+19:29:39 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:84:26: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+                 printf("%i", &i);
+                         ~^   ~~
+                         %n
+..\src\calc_on_C.c:84:26: warning: format '%i' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+                 printf("%i", &i);
+                         ~^   ~~
+                         %n
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:29:46 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:30:56 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:84:28: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+                 printf("%.2f\n", i);
+                         ~~~^     ~
+                         %.2d
+..\src\calc_on_C.c:84:28: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+                 printf("%.2f\n", i);
+                         ~~~^     ~
+                         %.2d
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:30:59 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:31:38 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:31:41 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:36:40 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:90:28: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+                 printf("%.2f\n", i);
+                         ~~~^     ~
+                         %.2d
+..\src\calc_on_C.c:90:28: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+                 printf("%.2f\n", i);
+                         ~~~^     ~
+                         %.2d
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:37:59 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:91:28: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+                 printf("%.2f\n", i);
+                         ~~~^     ~
+                         %.2d
+..\src\calc_on_C.c:91:28: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+                 printf("%.2f\n", i);
+                         ~~~^     ~
+                         %.2d
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:38:04 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:41:34 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:87:28: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+                 printf("%.2f\n", i);
+                         ~~~^     ~
+                         %.2d
+..\src\calc_on_C.c:87:28: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+                 printf("%.2f\n", i);
+                         ~~~^     ~
+                         %.2d
+..\src\calc_on_C.c:24:10: warning: unused variable 'dolar' [-Wunused-variable]
+     char dolar = '$';
+          ^~~~~
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:42:06 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:42:14 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+Info: Nothing to build for calc_on_C
+19:45:43 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:24:10: warning: unused variable 'dolar' [-Wunused-variable]
+     char dolar = '$';
+          ^~~~~
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:49:16 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:49:38 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:49:38 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:52:16 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:24:10: warning: unused variable 'dolar' [-Wunused-variable]
+     char dolar = '$';
+          ^~~~~
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:52:41 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:54:43 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:87:24: warning: too many arguments for format [-Wformat-extra-args]
+                 printf("Enter ","%i", j, " cord of vector (a):" );
+                        ^~~~~~~~
+..\src\calc_on_C.c:87:24: warning: too many arguments for format [-Wformat-extra-args]
+..\src\calc_on_C.c:24:10: warning: unused variable 'dolar' [-Wunused-variable]
+     char dolar = '$';
+          ^~~~~
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:55:24 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:24:10: warning: unused variable 'dolar' [-Wunused-variable]
+     char dolar = '$';
+          ^~~~~
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:55:33 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:55:34 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:55:46 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:56:53 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:24:10: warning: unused variable 'dolar' [-Wunused-variable]
+     char dolar = '$';
+          ^~~~~
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:56:56 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:57:00 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:57:15 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:57:17 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:58:27 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:24:10: warning: unused variable 'dolar' [-Wunused-variable]
+     char dolar = '$';
+          ^~~~~
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:58:30 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:58:34 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:58:44 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:02:38 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:24:10: warning: unused variable 'dolar' [-Wunused-variable]
+     char dolar = '$';
+          ^~~~~
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:02:40 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:02:45 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:02:47 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:04:11 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:24:10: warning: unused variable 'dolar' [-Wunused-variable]
+     char dolar = '$';
+          ^~~~~
+..\src\calc_on_C.c:22:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:04:13 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C

@@ -155,7 +155,7 @@ int main(void) {
             printf("1 - num. operations, 2 - vector operations");
         }
         sign = '$';
-        printf("If u want to continue type any button, but if u want to exit type 0:");
+        printf("If u want to continue type 1, but if u want to exit type 0:");
         scanf("%i", &turn_on);
     }
 	free(vector1);

@@ -21,18 +21,16 @@ int main(void) {
     int choose;  // var for choosing operation type
     int ist1;  // var for cycle 'for'
     int turn_on = 1; // var of 1-'on' or 0-'off' program
-    char dolar = '$';
     char sign = '$';
     int size; // var for using size of memory in vector operations
     float *vector1, *vector2;
     while(turn_on != 0){
-        sign = '$';
         printf("Choose calc mode:");
-        printf("1 - num. operations, 2 - vector operations: ");
+        printf("1 - num. operations, 2 - vector operations");
         scanf(" %i", &choose);
         if (choose == 1){
-            printf("type first number: "); // typing first number
-            scanf(" %f%*c", &firstNum);
+            printf("type first number:"); // typing first number
+            scanf("%f%*c", &firstNum);
             while(sign == '$'){
                 printf("type sign from range('+', '-', '*', '/', '^', '!'): ");
                 scanf("%c%*c", &sign); // typing sign of the operation
@@ -50,8 +48,7 @@ int main(void) {
                             printf("%.2f\n", firstNum*secondNum);
                             break;
                         case '/': // typing '/' for division
-                            if (secondNum != 0) {
-                                printf("%.2f\n", firstNum/secondNum);}
+                            if (secondNum != 0) printf("%.2f\n", firstNum/secondNum);
                             else printf("mistake!U can't divide into 0\n");
                             break; // if u divide into 0 there is error message will be appeared
                         case '^': // typing '^' for exponentiation
@@ -81,38 +78,22 @@ int main(void) {
             printf("Type vector's size: ");
             scanf("%i", &size);
             vector1 = calloc(size,sizeof(float));
-            if (size == 2){
-                printf("Enter 2 cords of vector (a): x,y and then choose operation.\n");
-            }
-            if (size == 3){
-                printf("Enter 3 cords of vector (a): x,y,z and then choose operation.\n");
-            }
             for (int i = 0; i < size; i++) {
-                int j = 1 + i;
-                printf("Enter ");
-                printf("%i", j);
-                printf(" cord: " );
+                printf("Enter 3 cords of vector (a): x,y,z and then waiting for calculation result.\n");
+                printf("Enter cords first vector (a): ");
                 scanf("%f", &vector1[i]);
             }
             while(sign == '$'){
                 printf("type sign from range: \n");
                 printf("'+'-vectors addition,");
                 printf("'-'-vectors subtraction");
-                printf("'*'- scalar product of vectors\n");
+                printf("'*'- scalar product of vectors");
                 scanf(" %c%*c", &sign);
                 if (sign == '+' || sign == '-' || sign == '*'){ // if operation's sign from this range, code continue to do vector's operations
                     vector2 = calloc(size,sizeof(float));
-                    if (size == 2){
-                        printf("Enter 2 cords of vector (b): x,y and then waiting for calculation result.\n");
-                    }
-                    if (size == 3){
-                        printf("Enter 3 cords of vector (b): x,y,z and then waiting for calculation result.\n");
-                    }
+                    printf("Enter 3 cords of vector (b): x,y,z and then waiting for calculation result.\n");
                     for (int i = 0; i < size; i++) {
-                        int j = i + 1;
-                        printf("Enter ");
-                        printf("%i", j);
-                        printf(" cord: " );
+                        printf("Enter cords second vector (b): "); // rewrite all printfs and delete
                         scanf("%f", &vector2[i]);
                     }
                     switch (sign) {
@@ -142,7 +123,7 @@ int main(void) {
                     }
                 }
                 else{
-                    printf("unsupportable sign. \nPlease, type another from this range:\n");
+                    printf("unsupportable sign. \nPlease, type another from this range: +, -, *, /, ^, !.\n");
                     printf("'+'-vectors addition, \n");
                     printf("'-'-vectors subtraction \n");
                     printf("'*'- scalar product of vectors \n");
@@ -154,8 +135,7 @@ int main(void) {
             printf("Unsupportable mode type.\nChoose from this list:");
             printf("1 - num. operations, 2 - vector operations");
         }
-        sign = '$';
-        printf("If u want to continue type any button, but if u want to exit type 0:");
+        printf("If u want to continue type 1, but if u want to exit type 0:");
         scanf("%i", &turn_on);
     }
 	free(vector1);
