@@ -1,11 +1,1 @@
-10:19:49 **** Incremental Build of configuration Debug for project calc_on_C ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
-..\src\calc_on_C.c: In function 'main':
-..\src\calc_on_C.c:20:9: warning: unused variable 'ist1' [-Wunused-variable]
-     int ist1;  // var for cycle 'for'
-         ^~~~
-gcc -o calc_on_C.exe "src\\calc_on_C.o" 
-
-10:19:49 Build Finished. 0 errors, 1 warnings. (took 554ms)
-
+Info: Nothing to build for calc_on_C

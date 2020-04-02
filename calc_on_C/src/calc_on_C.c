@@ -66,7 +66,7 @@ int main(void) {
                         var1 = var2;}
                     printf("%.2f\n", var2);}
                 else {
-                    printf("unsupportable sign. \nPlease, type another from this range: +, -, *, /, ^, !.\n");
+                    printf("unsupportable sign.Please, type another from this range: +, -, *, /, ^, !.\n");
                     sign = '$';
                 }
             }
@@ -130,9 +130,9 @@ int main(void) {
             printf("Unsupportable mode type.\nChoose from this list:");
             printf("1 - num. operations, 2 - vector operations");
         }
-        free(vector1);
-        free(vector2);
         printf("If u want to continue type 1, but if u want to exit type 0:");
         scanf("%i", &turn_on);
     }
+	free(vector1);
+    free(vector2);
 }
