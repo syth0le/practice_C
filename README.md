@@ -6,5 +6,5 @@ If u want to read information from file, please follow some rules:
     on 1st place - operation type, then mode type(s - num. operations, v - vectors), 
     if you choose number operations then enter 2 numbers, splitting space, or 1 number if u want counting factorial.
     if you choose vector operations then enter coordinate system type(n-dimensional), and then needful quantity of numbers.
-  2. For correct work processing type '#' at last line of the end of input File.
+  2. For correct work processing type '#' at empty last line of the end of input File.
   
