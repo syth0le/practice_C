@@ -83,3 +83,1218 @@ collect2.exe: error: ld returned 1 exit status
 00:32:29 **** Incremental Build of configuration Debug for project calc_on_C ****
 Info: Internal Builder is used for build
 gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+14:24:26 **** Rebuild of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:68:56: warning: passing argument 1 of 'printf' from incompatible pointer type [-Wincompatible-pointer-types]
+                             if (secondNum != 0) printf(output, "(%.2f / %.2f) = %.2f",firstNum, secondNum, firstNum / secondNum);
+                                                        ^~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'FILE *' {aka 'struct _iobuf *'}
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:91:75: warning: implicit declaration of function 'factorial'; did you mean '_atoi_l'? [-Wimplicit-function-declaration]
+                                 fprintf(output, "%.0f! = %.0f", firstNum, factorial(firstNum));}
+                                                                           ^~~~~~~~~
+                                                                           _atoi_l
+..\src\calc_on_C.c:91:61: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+                                 fprintf(output, "%.0f! = %.0f", firstNum, factorial(firstNum));}
+                                                          ~~~^             ~~~~~~~~~~~~~~~~~~~
+                                                          %.0d
+..\src\calc_on_C.c:91:61: warning: format '%f' expects argument of type 'double', but argument 4 has type 'int' [-Wformat=]
+                                 fprintf(output, "%.0f! = %.0f", firstNum, factorial(firstNum));}
+                                                          ~~~^             ~~~~~~~~~~~~~~~~~~~
+                                                          %.0d
+..\src\calc_on_C.c:134:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:134:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+src\calc_on_C.o: In function `main':
+C:\eclipse\workspace\calc_on_C\Debug/../src/calc_on_C.c:91: undefined reference to `factorial'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for calc_on_C
+Info: Nothing to build for calc_on_C
+14:27:29 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:68:56: warning: passing argument 1 of 'printf' from incompatible pointer type [-Wincompatible-pointer-types]
+                             if (secondNum != 0) printf(output, "(%.2f / %.2f) = %.2f",firstNum, secondNum, firstNum / secondNum);
+                                                        ^~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'FILE *' {aka 'struct _iobuf *'}
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:133:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:133:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+14:32:03 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:134:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:134:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:33:15 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+15:43:25 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:172:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:172:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:43:28 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+Info: Nothing to build for calc_on_C
+Info: Nothing to build for calc_on_C
+16:02:47 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:04:05 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+16:05:07 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+Info: Nothing to build for calc_on_C
+Info: Nothing to build for calc_on_C
+16:09:14 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:09:18 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+16:15:09 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:148:29: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\calc_on_C.c:148:21: error: too few arguments to function 'fprintf'
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                     ^~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:15: note: declared here
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+               ^~~~~~~
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:15:11 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:148:29: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\calc_on_C.c:148:21: error: too few arguments to function 'fprintf'
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                     ^~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:15: note: declared here
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+               ^~~~~~~
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:26:30 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:148:29: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\calc_on_C.c:148:21: error: too few arguments to function 'fprintf'
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                     ^~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:15: note: declared here
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+               ^~~~~~~
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:26:35 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:148:29: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\calc_on_C.c:148:21: error: too few arguments to function 'fprintf'
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                     ^~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:15: note: declared here
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+               ^~~~~~~
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:26:43 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:148:29: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\calc_on_C.c:148:21: error: too few arguments to function 'fprintf'
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                     ^~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:15: note: declared here
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+               ^~~~~~~
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:26:49 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:148:29: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\calc_on_C.c:148:21: error: too few arguments to function 'fprintf'
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                     ^~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:15: note: declared here
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+               ^~~~~~~
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:26:51 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:148:29: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\calc_on_C.c:148:21: error: too few arguments to function 'fprintf'
+                     fprintf("This unsupportable mode. Well, try again, follow descriptions.");
+                     ^~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:15: note: declared here
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+               ^~~~~~~
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:27:54 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+16:29:14 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:176:9: error: case label not within a switch statement
+         case 'c':
+         ^~~~
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:325:9: error: break statement not within loop or switch
+         break;
+         ^~~~~
+..\src\calc_on_C.c:327:9: error: 'default' label not within a switch statement
+         default:
+         ^~~~~~~
+..\src\calc_on_C.c:329:13: error: break statement not within loop or switch
+             break;
+             ^~~~~
+..\src\calc_on_C.c:44:13: warning: label 'loop' defined but not used [-Wunused-label]
+             loop:{
+             ^~~~
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+..\src\calc_on_C.c: At top level:
+..\src\calc_on_C.c:331:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+16:29:57 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:331:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\src\calc_on_C.c:44:13: warning: label 'loop' defined but not used [-Wunused-label]
+             loop:{
+             ^~~~
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:30:05 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:331:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\src\calc_on_C.c:44:13: warning: label 'loop' defined but not used [-Wunused-label]
+             loop:{
+             ^~~~
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:30:40 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:331:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\src\calc_on_C.c:44:13: warning: label 'loop' defined but not used [-Wunused-label]
+             loop:{
+             ^~~~
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:30:41 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:331:1: error: expected declaration or statement at end of input
+ }
+ ^
+..\src\calc_on_C.c:44:13: warning: label 'loop' defined but not used [-Wunused-label]
+             loop:{
+             ^~~~
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+16:30:53 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:181:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+16:31:41 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:184:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:184:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+16:32:40 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:172:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:172:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+16:36:01 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:147:28: warning: passing argument 1 of 'printf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     printf(output, "This unsupportable mode. Well, try again, follow descriptions.");
+                            ^~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'FILE *' {aka 'struct _iobuf *'}
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:162:29: warning: passing argument 2 of 'fprintf' makes pointer from integer without a cast [-Wint-conversion]
+             fprintf(output, sign);
+                             ^~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:75: note: expected 'const char * restrict' but argument is of type 'char'
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:174:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:174:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+16:37:48 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:147:28: warning: passing argument 1 of 'printf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     printf(output, "This unsupportable mode. Well, try again, follow descriptions.");
+                            ^~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'FILE *' {aka 'struct _iobuf *'}
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:174:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:174:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+16:39:03 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:147:28: warning: passing argument 1 of 'printf' from incompatible pointer type [-Wincompatible-pointer-types]
+                     printf(output, "This unsupportable mode. Well, try again, follow descriptions.");
+                            ^~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:509:48: note: expected 'const char * restrict' but argument is of type 'FILE *' {aka 'struct _iobuf *'}
+   int __cdecl printf(const char * __restrict__ _Format,...);
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+..\src\calc_on_C.c:174:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:174:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:39:06 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+16:39:15 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:174:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:174:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:39:18 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+16:41:14 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:176:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:176:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:41:16 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+16:41:54 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:176:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:176:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:41:56 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+Info: Nothing to build for calc_on_C
+16:58:17 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:176:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:176:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:58:55 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+19:49:16 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:165:21: warning: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+             fprintf("\v");
+                     ^~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\calc_on_C.c:165:13: error: too few arguments to function 'fprintf'
+             fprintf("\v");
+             ^~~~~~~
+In file included from ..\src\calc_on_C.c:19:
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:507:15: note: declared here
+   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+               ^~~~~~~
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+19:49:49 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+20:01:34 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:187:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:187:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:01:41 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:04:18 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:186:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:186:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+20:05:36 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:186:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:186:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+20:06:51 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:186:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:186:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:06:53 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+Info: Nothing to build for calc_on_C
+20:08:26 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:186:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:186:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+20:09:52 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:187:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:187:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+20:10:48 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:188:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:188:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+20:13:23 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:190:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:190:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+20:13:59 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:190:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:190:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:14:02 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:14:51 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:190:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:190:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:14:54 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:17:17 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:191:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:191:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:17:21 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:18:23 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:18:25 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+Info: Nothing to build for calc_on_C
+Info: Nothing to build for calc_on_C
+20:20:02 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:179:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:20:05 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:21:07 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:178:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:178:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:21:11 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:21:56 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:178:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:178:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:21:58 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:27:28 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:170:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:170:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:27:34 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:29:04 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:171:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:171:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:29:06 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:30:00 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:168:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:168:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:30:01 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:33:08 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:166:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:166:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:33:10 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:39:54 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:169:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:169:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:39:57 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:41:40 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:169:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:169:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:41:42 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+20:42:29 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:169:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:169:26: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+                 scanf(" %i", &choose);
+                         ~^   ~~~~~~~
+                         %c
+..\src\calc_on_C.c:24:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:42:30 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 

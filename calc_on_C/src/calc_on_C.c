@@ -21,12 +21,10 @@
 
 int main(void) {
     float firstNum, secondNum, var1, var2, result;  // main working vars
-    int choose;  // var for choosing operation type
-    int ist1;  // var for cycle 'for'
-    char turn_on = 'l'; // var any button -'on' or q-'off' program
-    char sign = '$', l;
-    int size; // var for using size of memory in vector operations
+    int ist1, size;  // var for choosing operation type
+    char choose, turn_on = 'l', sign = '$', l, inFile[100], outFile[100];
     float *vector1, *vector2;
+    FILE *input, *output;
 
     printf("What do u want to use?\n Choose f - file, c - console.");
     printf("\nEnter your choice: ");
@@ -34,7 +32,134 @@ int main(void) {
 
     switch (l){
         case 'f':
+            printf("NOTICE!\n");
+            printf("For correct work processing type '#' at last line of the end of input File.");
+            printf("\nIf u got errors, or uncorrect input, read README.md");
+            printf("\nEnter input file name: ");
+            scanf("%s", inFile);
+            printf("Enter output file name: ");
+            scanf("%s", outFile);
 
+            input = fopen(inFile, "r");
+            output = fopen(outFile, "w");
+
+            fscanf(input, "%c", &sign);
+            while (sign == '+' || sign == '-' || sign == '*' || sign == '/' || sign == '^' || sign == '!' ){
+            fscanf(input, " %c", &choose);
+
+            switch(choose){
+                case 's':
+
+                    switch(sign){
+
+                        case '+':
+                            fscanf(input, " %f %f", &firstNum, &secondNum);
+                            fprintf(output, "(%.2f + %.2f) = %.2f", firstNum, secondNum, firstNum + secondNum);
+                            break;
+
+                        case '-':
+                            fscanf(input, " %f %f", &firstNum, &secondNum);
+                            fprintf(output, "(%.2f - %.2f) = %.2f", firstNum, secondNum, firstNum - secondNum);
+                            break;
+
+                        case '*':
+                            fscanf(input, " %f %f", &firstNum, &secondNum);
+                            fprintf(output, "(%.2f * %.2f) = %.2f", firstNum, secondNum, firstNum * secondNum);
+                            break;
+
+                        case '/':
+                            fscanf(input, " %f %f", &firstNum, &secondNum);
+                            if (secondNum != 0)
+                                fprintf(output, "(%.2f / %.2f) = %.2f",firstNum, secondNum, firstNum / secondNum);
+                            else fprintf(output, "mistake!U can't divide into 0\n");
+                            break;
+
+                        case '^':
+                            fscanf(input, " %f %f", &firstNum, &secondNum);
+                            var2 = 1;
+                            var1 = 1;
+                            for (int ist1=1;ist1<=secondNum;ist1++){
+                                var1 = var2;
+                                var2 = var1 * firstNum;}
+                            fprintf(output, "%.2f ^ %.2f = %.2f", firstNum, secondNum, var2);
+                            break;
+
+                        case '!':
+                            fscanf(input, "%f",&firstNum);
+                            if (firstNum >= 0) {
+                                var1=0;
+                                var2=1;
+                                for (int ist1=1; ist1<=firstNum;ist1++){
+                                    var2 = var2 * ist1;
+                                    var1 = var2;}
+                                fprintf(output, "%.0f! = %.0f", firstNum, var2);}
+                            else fprintf(output, "This operation is not valid");
+                            break;
+
+                        default:
+                            fprintf(output, "Unknown operation, try again.");
+                            break;
+                    }
+                    break;
+
+                case 'v':
+                    fscanf(input, "%i",&size);
+                    vector1 = malloc(size*sizeof(int));
+                    vector2 = malloc(size*sizeof(int));
+                    for (int i=0; i < size; i++) fscanf(input, "%f", &vector1[i]);
+                    for (int i=0; i < size; i++) fscanf(input, "%f", &vector2[i]);
+
+                    switch(sign){
+
+                        case '+':
+                            fprintf(output, "( ");
+                            for (int i=0; i < size; i++) fprintf(output, "%.2f ", vector1[i]);
+                            fprintf(output, " ) + ( ");
+                            for (int i=0; i < size; i++) fprintf(output, "%.2f ", vector2[i]);
+                            fprintf(output, " ) = ( ");
+                            for (int i=0; i < size; i++) fprintf(output, "%.2f ", vector1[i] + vector2[i]);
+                            fprintf(output, " )");
+                            break;
+
+                        case '-':
+                            fprintf(output, "( ");
+                            for (int i=0; i < size; i++) fprintf(output, "%.2f ", vector1[i]);
+                            fprintf(output, " ) - ( ");
+                            for (int i=0; i < size; i++) fprintf(output, "%.2f ", vector2[i]);
+                            fprintf(output, " ) = ( ");
+                            for (int i=0; i < size; i++) fprintf(output, "%.2f ", vector1[i] - vector2[i]);
+                            fprintf(output, " )");
+                            break;
+
+                        case '*':
+                            fprintf(output, "( ");
+                            for (int i=0; i < size; i++) fprintf(output, "%.2f ", vector1[i]);
+                            fprintf(output, " ) * ( ");
+                            for (int i=0; i < size; i++) fprintf(output, "%.2f ", vector2[i]);
+                            fprintf(output, " ) = ");
+                            for (int i=0; i < size; i++) result += vector1[i] * vector2[i];
+                            fprintf(output, "%.2f ", result);
+                            break;
+
+                        default:
+                            fprintf(output, "Unknown operation");
+                            break;
+                    }
+                    break;
+
+                default:
+                    fprintf(output, "This unsupportable mode. Well, try again, follow descriptions.");
+                    break;
+            }
+
+            fscanf(input, "\n%c", &sign);
+            fprintf(output, "\n");
+            }
+            free(vector1);
+            free(vector2);
+            fclose(input);
+            fclose(output);
+            break;
 
         case 'c':
             while(turn_on != 'q'){
@@ -42,7 +167,7 @@ int main(void) {
                 printf("Choose calc mode: ");
                 printf("1 - num. operations, 2 - vector operations: ");
                 scanf(" %i", &choose);
-                if (choose == 1){
+                if (choose == '1'){
                     printf("type first number: "); // typing first number
                     scanf(" %f%*c", &firstNum);
                     while(sign == '$'){
@@ -84,22 +209,24 @@ int main(void) {
                                 break;
 
                             case '!': // typing '!' for factorial
-                                var1=0;
-                                var2=1;
-                                for (int ist1=1; ist1<=firstNum;ist1++){
-                                    var2 = var2 * ist1;
-                                    var1 = var2;}
-                                printf("%.2f\n", var2);
+                                if (firstNum >= 0){
+                                    var1=0;
+                                    var2=1;
+                                    for (int ist1=1; ist1<=firstNum;ist1++){
+                                        var2 = var2 * ist1;
+                                        var1 = var2;}
+                                    printf("%.2f\n", var2);}
+                                else printf("This operation is not valid, try again.");
                                 break;
 
                             default:
-                                printf("unsupportable sign.Please, type another from this range: +, -, *, /, ^, !.\n");
+                                printf("Unsupportable sign.Please, type another from this range: +, -, *, /, ^, !.\n");
                                 sign = '$';
                                 break;
                         }
                     }
                 }
-                else if (choose == 2){             //choosing coordinate system
+                else if (choose == '2'){             //choosing coordinate system
                     printf("You can choose coordinate system 2 - two-dimensional or 3 - three-dimensional\n");
                     printf("Type vector's size: ");
                     scanf("%i", &size);

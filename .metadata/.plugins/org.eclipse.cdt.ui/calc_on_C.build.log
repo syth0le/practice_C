@@ -1,6 +1,6 @@
-00:32:29 **** Incremental Build of configuration Debug for project calc_on_C ****
+20:42:30 **** Incremental Build of configuration Debug for project calc_on_C ****
 Info: Internal Builder is used for build
 gcc -o calc_on_C.exe "src\\calc_on_C.o" 
 
-00:32:29 Build Finished. 0 errors, 0 warnings. (took 279ms)
+20:42:31 Build Finished. 0 errors, 0 warnings. (took 309ms)
 
