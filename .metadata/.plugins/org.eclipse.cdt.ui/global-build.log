@@ -1402,3 +1402,39 @@ collect2.exe: error: ld returned 1 exit status
 21:07:29 **** Incremental Build of configuration Debug for project calc_on_C ****
 Info: Internal Builder is used for build
 gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+23:47:58 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:30:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:48:00 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:48:07 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+23:49:30 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:30:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:49:35 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+C:/eclipse/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file calc_on_C.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:49:37 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
