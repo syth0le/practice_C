@@ -1,4 +1,4 @@
-10:14:08 **** Rebuild of configuration Debug for project my_f1rst_test ****
+10:41:14 **** Rebuild of configuration Debug for project my_f1rst_test ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\my_f1rst_test.o" "..\\src\\my_f1rst_test.c" 
 ..\src\my_f1rst_test.c: In function 'main':
@@ -10,5 +10,5 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\my_f1rst_test.o" "..\\src\\my_f
          ^~~~
 gcc -o my_f1rst_test.exe "src\\my_f1rst_test.o" 
 
-10:14:09 Build Finished. 0 errors, 2 warnings. (took 528ms)
+10:41:15 Build Finished. 0 errors, 2 warnings. (took 1s.68ms)
 

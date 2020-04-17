@@ -1438,3 +1438,26 @@ collect2.exe: error: ld returned 1 exit status
 23:49:37 **** Incremental Build of configuration Debug for project calc_on_C ****
 Info: Internal Builder is used for build
 gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+10:41:12 **** Incremental Build of configuration Debug for project calc_on_C ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calc_on_C.o" "..\\src\\calc_on_C.c" 
+..\src\calc_on_C.c: In function 'main':
+..\src\calc_on_C.c:31:18: warning: unused variable 'turn_on' [-Wunused-variable]
+     char choose, turn_on = 'l', sign = '$', l, inFile[100], outFile[100], repeat = 'y';
+                  ^~~~~~~
+..\src\calc_on_C.c:30:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1, size;  // var for choosing operation type
+         ^~~~
+gcc -o calc_on_C.exe "src\\calc_on_C.o" 
+10:41:14 **** Rebuild of configuration Debug for project my_f1rst_test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\my_f1rst_test.o" "..\\src\\my_f1rst_test.c" 
+..\src\my_f1rst_test.c: In function 'main':
+..\src\my_f1rst_test.c:20:9: warning: unused variable 'ist1' [-Wunused-variable]
+     int ist1;  // var for cycle 'for'
+         ^~~~
+..\src\my_f1rst_test.c:19:9: warning: unused variable 'ist0' [-Wunused-variable]
+     int ist0;  // var for cycle 'for'
+         ^~~~
+gcc -o my_f1rst_test.exe "src\\my_f1rst_test.o" 
+Info: Nothing to build for calc_on_C
