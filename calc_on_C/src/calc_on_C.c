@@ -17,8 +17,7 @@
  This is 3rd version of calc on C. Supporting 2 modes: file-reading and console. If u want to read information from file, please follow some rules:
     1.Information format must be like: - s 3 2 or * v 3 4 5 5 -1 2 -7 on 1st place - operation type, then mode type(s - num. operations, v - vectors),
         if you choose number operations then enter 2 numbers, splitting space, or 1 number if u want counting factorial.
-        if you choose vector operations then enter coordinate system type(n-dimensional), and then needful quantity of numbers.
-    2.For correct work processing type '#' at empty last line of the end of input File.
+        if you choose vector operations then enter coordinate system type(n-dimensional), and then needful quantity of numbers
  ============================================================================
  */
 
@@ -27,8 +26,8 @@
 
 int main(void) {
     float firstNum, secondNum, var1, var2, result;  // main working vars
-    int ist1, size;  // var for choosing operation type
-    char choose, turn_on = 'l', sign = '$', l, inFile[100], outFile[100], repeat = 'y';
+    int size;  // var for choosing operation type
+    char choose, sign = '$', l, inFile[100], outFile[100], repeat = 'y';
     float *vector1, *vector2;
     FILE *input, *output;
     while(repeat == 'y'){
@@ -170,25 +169,28 @@ int main(void) {
                     while(sign == '$'){
                         printf("type sign from range('+', '-', '*', '/', '^', '!'): ");
                         scanf("%c%*c", &sign); // typing sign of the operation
-                        printf("type second number:"); // typing second number
                         switch (sign) {
 
                             case '+': // typing '+' for addition
+                                printf("type second number:"); // typing second number
                                 scanf("%f%*c", &secondNum);
                                 printf("%.2f\n", firstNum+secondNum);
                                 break;
 
                             case '-': // typing '-' for subtraction
+                                printf("type second number:"); // typing second number
                                 scanf("%f%*c", &secondNum);
                                 printf("%.2f\n", firstNum-secondNum);
                                 break;
 
                             case '*': // typing '*' for multiplication
+                                printf("type second number:"); // typing second number
                                 scanf("%f%*c", &secondNum);
                                 printf("%.2f\n", firstNum*secondNum);
                                 break;
 
                             case '/': // typing '/' for division
+                                printf("type second number:"); // typing second number
                                 scanf("%f%*c", &secondNum);
                                 if (secondNum != 0) {
                                     printf("%.2f\n", firstNum/secondNum);}
@@ -196,6 +198,7 @@ int main(void) {
                                 break; // if u divide into 0 there is error message will be appeared
 
                             case '^': // typing '^' for exponentiation
+                                printf("type second number:"); // typing second number
                                 scanf("%f%*c", &secondNum);
                                 var2 = 1;
                                 var1 = 1;
