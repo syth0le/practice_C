@@ -38,9 +38,6 @@ int main(void) {
 
         switch (l){
             case 'f':
-                printf("NOTICE!\n");
-                printf("For correct work processing type '#' at last line of the end of input File.");
-                printf("\nIf u got errors, or incorrect input, read README.md or description");
                 printf("\nEnter input file name: ");
                 scanf("%s", inFile);
                 printf("Enter output file name: ");
@@ -149,6 +146,8 @@ int main(void) {
                             default:
                                 fprintf(output, "Unknown operation");
                         }
+                        free(vector1);
+                        free(vector2);
                         break;
 
                     default:
@@ -156,8 +155,6 @@ int main(void) {
                 }
                 fprintf(output, "\n");
                 }
-                free(vector1);
-                free(vector2);
                 fclose(input);
                 fclose(output);
                 break;
@@ -226,10 +223,9 @@ int main(void) {
                     }
                 }
                 else if (choose == '2'){             //choosing coordinate system
-                    printf("You can choose coordinate system 2 - two-dimensional or 3 - three-dimensional\n");
                     printf("Type vector's size: ");
                     scanf("%i", &size);
-                    vector1 = calloc(size,sizeof(float));
+                    vector1 = malloc(size*sizeof(float));
                     if (size == 2){
                         printf("Enter 2 cords of vector (a): x,y and then choose operation.\n");
                     }
@@ -244,7 +240,7 @@ int main(void) {
                         scanf("%f", &vector1[i]);
                     }
                     while(sign == '$'){
-                        vector2 = calloc(size,sizeof(float));
+                        vector2 = malloc(size*sizeof(float));
                         printf("type sign from range: \n");
                         printf("'+'-vectors addition,");
                         printf("'-'-vectors subtraction");
@@ -298,14 +294,14 @@ int main(void) {
                                 sign = '$';
                         }
                     }
+                    free(vector1);
+                    free(vector2);
                 }
                 else{
                     printf("Unsupportable mode type.\nChoose from this list:");
                     printf("1 - num. operations, 2 - vector operations");
                 }
-                sign = '$';
-            free(vector1);
-            free(vector2);
+            sign = '$';
             break;
 
             default:
