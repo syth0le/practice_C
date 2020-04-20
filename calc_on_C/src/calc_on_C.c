@@ -47,10 +47,9 @@ int main(void) {
                 scanf("%s", outFile);
 
                 input = fopen(inFile, "r");
-                output = fopen(outFile, "w");
-
-                fscanf(input, "%c", &sign);
-                while (sign == '+' || sign == '-' || sign == '*' || sign == '/' || sign == '^' || sign == '!' ){
+                output = fopen(outFile, "a");
+                while (feof(input) == 0){
+                fscanf(input, " %c", &sign);
                 fscanf(input, " %c", &choose);
 
                 switch(choose){
@@ -149,16 +148,12 @@ int main(void) {
 
                             default:
                                 fprintf(output, "Unknown operation");
-                                break;
                         }
                         break;
 
                     default:
                         fprintf(output, "This unsupportable mode. Well, try again, follow descriptions.");
-                        break;
                 }
-
-                fscanf(input, "\n%c", &sign);
                 fprintf(output, "\n");
                 }
                 free(vector1);
@@ -227,7 +222,6 @@ int main(void) {
                             default:
                                 printf("Unsupportable sign.Please, type another from this range: +, -, *, /, ^, !.\n");
                                 sign = '$';
-                                break;
                         }
                     }
                 }
