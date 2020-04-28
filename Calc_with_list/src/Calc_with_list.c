@@ -47,107 +47,107 @@ int main() {
     input_data *head, *current;
     output_data *head_result, *current_result;
     while(end_work != 0){
-    printf("Enter input file name: ");
-    scanf(" %s", inFile);
-    printf("Enter output file name: ");
-    scanf(" %s", outFile);
-    input = fopen(inFile, "r");
-    if(!feof(input)){
-        // it works until the end of input file appeared
+        printf("Enter input file name: ");
+        scanf(" %s", inFile);
+        printf("Enter output file name: ");
+        scanf(" %s", outFile);
+        input = fopen(inFile, "r");
+        if(!feof(input)){
+            // it works until the end of input file appeared
 
-        head = malloc(1 * sizeof(input_data));  // make memory allocation for head of our list. It will be for each element.
-        fscanf(input, " %c %c", &head->sign, &head->operation);
+            head = malloc(1 * sizeof(input_data));  // make memory allocation for head of our list. It will be for each element.
+            fscanf(input, " %c %c", &head->sign, &head->operation);
 
-        // process all data of each element
-        if (head->operation == 'v') { fscanf(input, " %i", &head->size);
-        }
-        else
-        {
-            head->size = 1;
-        }
-        if (head->sign != '!') {
-            head->firstNum = addnumber(input, head->size);
-            head->secondNum = addnumber(input, head->size);
-        }
-        else
-        {
-            head->firstNum = addnumber(input, head->size);
-            head->secondNum = NULL;
-        }
+            // process all data of each element
+            if (head->operation == 'v') { fscanf(input, " %i", &head->size);
+            }
+            else
+            {
+                head->size = 1;
+            }
+            if (head->sign != '!') {
+                head->firstNum = addnumber(input, head->size);
+                head->secondNum = addnumber(input, head->size);
+            }
+            else
+            {
+                head->firstNum = addnumber(input, head->size);
+                head->secondNum = NULL;
+            }
 
-        // swapping current pointer element
-        // it needs for future operations and for adding next head element when cycle will go to next round.
-        current = head;
-        int n;
+            // swapping current pointer element
+            // it needs for future operations and for adding next head element when cycle will go to next round.
+            current = head;
+            int n;
 
-        // adding elements until we get the end of file.
-        while (!feof(input))
-        {
-            addelement(current, input);
+            // adding elements until we get the end of file.
+            while (!feof(input))
+            {
+                addelement(current, input);
+                current = current->next;
+                n += 1;
+            }
+
+            // make memory allocation for head of res_list.
+            head_result = malloc(sizeof(output_data));
+
+            // swap pointers for current.
+            current = head;
+            if (current->operation == 'v')
+            {
+                head_result->result = vectors(current->sign, current->size, current->firstNum, current->secondNum);
+            }
+            else
+            { head_result->result = numbers(current->sign, current->firstNum, current->secondNum); }
+            head_result->res_next = NULL;
             current = current->next;
-            n += 1;
-        }
+            current_result = head_result;
 
-        // make memory allocation for head of res_list.
-        head_result = malloc(sizeof(output_data));
+            // adding all elements to res_list until elements end.
+            while (current != NULL)
+            {
+                addelement_res(current_result, current);
+                current = current->next;
+                current_result = current_result->res_next;
+            }
+            current = head;
+            current_result = head_result;
+            fclose(input);
+            output = fopen(outFile, "w");
 
-        // swap pointers for current.
-        current = head;
-        if (current->operation == 'v')
-        {
-            head_result->result = vectors(current->sign, current->size, current->firstNum, current->secondNum);
-        }
-        else
-        { head_result->result = numbers(current->sign, current->firstNum, current->secondNum); }
-        head_result->res_next = NULL;
-        current = current->next;
-        current_result = head_result;
-
-        // adding all elements to res_list until elements end.
-        while (current != NULL)
-        {
-            addelement_res(current_result, current);
-            current = current->next;
-            current_result = current_result->res_next;
-        }
-        current = head;
-        current_result = head_result;
-        fclose(input);
-        output = fopen(outFile, "w");
-
-        // process all needful elements to res_list until elements end.
-        // adding results to output file correctly.
-        while (current != NULL) {
-            if (current->operation == 'v') {
-                fprintf(output, "(");
-                //вывод данных из first,second and result
-                for (int i = 0; i < current->size; i++) {
-                    fprintf(output, " %.2f ", current->firstNum[i]);
-                }
-                fprintf(output, ") %c (", current->sign);
-                for (int i = 0; i < current->size; i++) {
-                    fprintf(output, " %.2f ", current->secondNum[i]);
-                }
-                fprintf(output, ") = ");
-                if (current->sign != '*') {
+            // process all needful elements to res_list until elements end.
+            // adding results to output file correctly.
+            while (current != NULL) {
+                if (current->operation == 'v') {
                     fprintf(output, "(");
-                    for (int i = 0; i < current->size; i++) { fprintf(output, " %.2f ", current_result->result[i]); }
-                    fprintf(output, ")\n");
-                } else {
-                    fprintf(output, " %.2f\n", current_result->result[0]);
-                }
-            } else if (current->operation == 's'){
-                fprintf(output, "%.2f\n", current_result->result[0]);
-           }
-            current = current->next;
-            current_result = current_result->res_next;
+                    //вывод данных из first,second and result
+                    for (int i = 0; i < current->size; i++) {
+                        fprintf(output, " %.2f ", current->firstNum[i]);
+                    }
+                    fprintf(output, ") %c (", current->sign);
+                    for (int i = 0; i < current->size; i++) {
+                        fprintf(output, " %.2f ", current->secondNum[i]);
+                    }
+                    fprintf(output, ") = ");
+                    if (current->sign != '*') {
+                        fprintf(output, "(");
+                        for (int i = 0; i < current->size; i++) { fprintf(output, " %.2f ", current_result->result[i]); }
+                        fprintf(output, ")\n");
+                    } else {
+                        fprintf(output, " %.2f\n", current_result->result[0]);
+                    }
+                } else if (current->operation == 's'){
+                    fprintf(output, "%.2f\n", current_result->result[0]);
+               }
+                current = current->next;
+                current_result = current_result->res_next;
+            }
+            fclose(output);
+            }
+        printf("\nDo you want to continue?\n");
+        printf("Enter 0 - to close, any button for continue: ");
+        scanf(" %i", &end_work);
         }
-        fclose(output);
-        }
-    printf("Do you want to continue?\n");
-    printf("Enter 0 - to close, any button for continue\n");
-    scanf(" %i", &end_work);
-    }
     return EXIT_SUCCESS;
 }
 
