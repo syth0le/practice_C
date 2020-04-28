@@ -4,13 +4,19 @@
  Author      : sythole
  Version     :
  Copyright   : my and only my
- Description :
+ Description : This new calc version. It works with data structures like lists.
+ Using this calc is simple. Enter input and output files, program reads needful data from input file and starts working.
+ From input file elements will add to first list and if program will need elements, it will get everything from start_list.
+ After counting results will add to another list.
+ Finally, program read elements from rez_list and add everything to output file.
  ============================================================================
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 
+
+// create useful data structures, which were described in task.
 typedef struct start_list {
     char operation;
     char sign;
@@ -25,6 +31,7 @@ typedef struct rez_list {
     struct rez_list *res_next;
 } output_data;
 
+// function for counting simple numbers with memory allocation
 float *numbers(char sign, float *firstNum, float *secondNum){
     float *res_num;
     float var1, var2;
@@ -69,12 +76,12 @@ float *numbers(char sign, float *firstNum, float *secondNum){
     }
     return firstNum;
     return secondNum;
-    free(firstNum);
+    free(firstNum);  // return needful results after counting and free all temporary vars.
     free(secondNum);
     free(res_num);
 }
 
-
+// function for counting vectors with memory allocation
 float *vectors(char sign, int size, float *vector1, float *vector2){
     float *res_vect;
     switch (sign){
@@ -103,12 +110,13 @@ float *vectors(char sign, int size, float *vector1, float *vector2){
         }
     return vector1;
     return vector2;
-    free(vector1);
+    free(vector1);  // return needful results after counting and free all temporary vars.
     free(vector2);
     free(res_vect);
 }
 
-float *addnumber(FILE *input, int size){ //Добавление числа
+//This function was made for reading pointer of number and adding him to variable
+float *addnumber(FILE *input, int size){
     float *number;
     number = malloc(size * sizeof(float));
     for(int i = 0;i < size;i++)
@@ -118,6 +126,8 @@ float *addnumber(FILE *input, int size){ //Добавление числа
     return number;
 }
 
+// function adding needful numbers to our created structure
+// it reads instructions from input file and creates list with predefined actions
 void addelement(input_data *current, FILE *input){
     input_data *tmp = malloc(1 * sizeof(input_data));
     fscanf(input, " %c %c", &tmp->sign, &tmp->operation);
@@ -140,6 +150,8 @@ void addelement(input_data *current, FILE *input){
     current->next = tmp;
 }
 
+// this function is analog of "addelement". It's working principle is similar with upper func.
+// but this function doesn't read something from file, it read needful numbers after all operations we did.
 void addelement_res(output_data *current_res, input_data *current)
 {
     output_data *tmp_res = malloc(1 * sizeof(output_data));
@@ -154,6 +166,7 @@ void addelement_res(output_data *current_res, input_data *current)
 }
 
 
+// main function using all funcs described upper.
 int main() {
     char inFile[100], outFile[100];
     FILE *input, *output;
@@ -165,8 +178,12 @@ int main() {
     scanf(" %s", outFile);
     input = fopen(inFile, "r");
     if(!feof(input)){
-        head = malloc(1 * sizeof(input_data));
+        // it works until the end of input file appeared
+
+        head = malloc(1 * sizeof(input_data));  // make memory allocation for head of our list. It will be for each element.
         fscanf(input, " %c %c", &head->sign, &head->operation);
+
+        // process all data of each element
         if (head->operation == 'v') { fscanf(input, " %i", &head->size);
         }
         else
@@ -182,15 +199,24 @@ int main() {
             head->firstNum = addnumber(input, head->size);
             head->secondNum = NULL;
         }
+
+        // swapping current pointer element
+        // it needs for future operations and for adding next head element when cycle will go to next round.
         current = head;
         int n;
+
+        // adding elements until we get the end of file.
         while (!feof(input))
         {
             addelement(current, input);
             current = current->next;
             n += 1;
         }
+
+        // make memory allocation for head of res_list.
         head_result = malloc(sizeof(output_data));
+
+        // swap pointers for current.
         current = head;
         if (current->operation == 'v')
         {
@@ -201,6 +227,8 @@ int main() {
         head_result->res_next = NULL;
         current = current->next;
         current_result = head_result;
+
+        // adding all elements to res_list until elements end.
         while (current != NULL)
         {
             addelement_res(current_result, current);
@@ -211,6 +239,9 @@ int main() {
         current_result = head_result;
         fclose(input);
         output = fopen(outFile, "w");
+
+        // process all needful elements to res_list until elements end.
+        // adding results to output file correctly.
         while (current != NULL) {
             if (current->operation == 'v') {
                 fprintf(output, "(");
