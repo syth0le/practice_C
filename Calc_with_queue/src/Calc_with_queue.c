@@ -23,7 +23,7 @@ queue *tail = NULL;
 // structure for results after operations
 typedef struct rez_stack{
     float result;
-    struct stack *res_last;
+    struct rez_stack *res_last;
 }rez_stack;
 
 rez_stack *head_stack = NULL;
@@ -137,13 +137,14 @@ void push_stack(float element){
 
 float pop_stack(void){
     if (head_stack != NULL){
-    rez_stack *tmp;
-    float data;
-    tmp = head_stack;
-    head_stack = head_stack->res_last;
-    data = tmp->result;
-    free(tmp);
-    return data;}
+        rez_stack *tmp;
+        float data;
+        tmp = head_stack;
+        head_stack = head_stack->res_last;
+        data = tmp->result;
+        free(tmp);
+        return data;
+    }
     else{
         return NULL;
     }
