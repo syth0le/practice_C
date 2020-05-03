@@ -13,7 +13,7 @@
 
 //structure for strings.
 typedef struct command_list{
-    char command[60];
+    char string[60];
     struct command_list *next;
 }queue;
 
@@ -21,81 +21,86 @@ queue *head = NULL;
 queue *tail = NULL;
 
 // structure for results after operations
-typedef struct stack {
+typedef struct rez_stack{
     float result;
     struct stack *res_last;
-} rez_stack;
+}rez_stack;
 
 rez_stack *head_stack = NULL;
 
 
 float pop_stack(void);
 void push_stack(float element);
-int addelement_queqe(FILE *input);
-char *read_element(void);
-float *numbers(char sign, float *firstNum, float *secondNum);
+int putElement(FILE *input);
+char getElement(void);
+float numbers(char sign, float firstNum, float secondNum);
 
 
 int main(void) {
-	puts("zdarova"); /* p
-	rints zdarova */
-	return EXIT_SUCCESS;
+    //int end_work = 1;
+    int counting = 0;
+    float elem1, elem2, elem3, rez;
+    char inFile[100], outFile[100], *smth;
+    FILE *input, *output;
+    printf("Enter input file name: ");
+    scanf(" %s", inFile);
+    printf("Enter output file name: ");
+    scanf(" %s", outFile);
+    input = fopen(inFile, "r");
+    while(!feof(input)){ // ec чо добавить в иф обратно
+        putElement(input);
+        counting += 1;
+    }
+
 }
 
+float numbers(char oper, float a, float b){
+    float rez;
+    int var1, var2;
+    switch (oper){
 
-float *numbers(char sign, float *firstNum, float *secondNum){
-    float *res_num;
-    float var1, var2;
-    res_num = malloc(1 * sizeof(float));
-    switch (sign) {
-        case '+':
-            res_num[0] = firstNum[0] + secondNum[0];
-            return res_num;
+        case "+":
+            rez = a + b;
+            return rez;
 
-        case '-': // typing '-' for subtraction
-            res_num[0] = firstNum[0] - secondNum[0];
-            return res_num;
+        case "-":
+            rez = a - b;
+            return rez;
 
-        case '*': // typing '*' for multiplication
-            res_num[0] = firstNum[0] * secondNum[0];
-            return res_num;
+        case "*":
+            rez = a * b;
+            return rez;
 
-        case '/':
-            if (secondNum[0] != 0) {
-                res_num[0] = firstNum[0] / secondNum[0];
-                return res_num;
-            }
-            else {
+        case "/":
+            if (b == 0){
                 return 0;
             }
-
+            else{
+                rez = a / b;
+                return rez;
+            }
         case '^':
             var2 = 1;
             var1 = 1;
-            for (int ist1=1;ist1<=secondNum[0];ist1++){
+            for (int ist1=1;ist1<=b[0];ist1++){
                 var1 = var2;
-                var2 = var1 * firstNum[0];}
-            res_num[0] = var2;
-            return res_num;
+                var2 = var1 * a[0];}
+            rez[0] = var2;
+            return rez;
 
         case '!':
             var1 = 1;
-            for(int i = 1; i<=firstNum[0]; i++)
+            for(int i = 1; i<=a[0]; i++)
             {var1 = var1 * i;}
-            res_num[0] = var1;
-            return res_num;
+            rez[0] = var1;
+            return rez;
     }
-    return firstNum;
-    return secondNum;
-    free(firstNum);  // return needful results after counting and free all temporary vars.
-    free(secondNum);
-    free(res_num);
 }
 
 
-int addelement_queqe(FILE *input){
+int putElement(FILE *input){
     queue *tmp = malloc(1 * sizeof(queue));
-    fgets(tmp->command, sizeof(tmp->command), input);
+    fgets(tmp->string, sizeof(tmp->string), input);
     tmp->next = NULL;
     if(tail != NULL){
         tail->next = tmp;
@@ -107,16 +112,16 @@ int addelement_queqe(FILE *input){
     return 1;
 }
 
-char *read_element(void){
+char *getElement(void){
     if(head != NULL) {
         char *data;
-        data = head->command;
+        data = head->string;
         head = head->next;
         return data;
     } else{return NULL;}
 }
 
-//функция добавления в стэк
+
 void push_stack(float element){
     rez_stack *tmp_stack = malloc(1* sizeof(rez_stack));
     tmp_stack->result = element;
@@ -129,13 +134,17 @@ void push_stack(float element){
     }
 }
 
-//Функция изъятия из стэка
+
 float pop_stack(void){
+    if (head_stack != NULL){
     rez_stack *tmp;
     float data;
     tmp = head_stack;
     head_stack = head_stack->res_last;
     data = tmp->result;
     free(tmp);
-    return data;
+    return data;}
+    else{
+        return NULL;
+    }
 }
