@@ -40,7 +40,8 @@ float numbers(char sign, float firstNum, float secondNum);
 int main(void) {
     //int end_work = 1;
     int counting = 0;
-    int k = 0, len = 0;
+    int k = 0, len = 0, m = -1;
+    double a[30];
     float elem1, elem2, elem3, rez;
     char inFile[100], outFile[100], *smth, *cut, lol[10] = " ";
     FILE *input, *output;
@@ -49,90 +50,67 @@ int main(void) {
     printf("Enter output file name: ");
     scanf(" %s", outFile);
     input = fopen(inFile , "r");
-    printf("/0/");
     while(!feof(input)){
         putElement(input);
-        counting += 1;
-        printf("/1/");
+        counting++;
     }
     while(counting != 0){
-        printf("/2/");
         smth = getElement();
         len = strlen(smth);
         counting--;
-        printf(smth);
 
         while (counting != 0){
                 counting--;
                 cut = strtok(smth,lol);
-                printf(" len_main=(%i\n)", len);
                 while (cut != NULL)
                 {
-
-                    printf(" k1=(%i\n)", k);
                     int i = 0;
                     elem1 = strtof(cut, NULL);
                     if (elem1 != 0){
                         push_stack(elem1);
                         i++;
-                        printf(" k2=(%i\n)", k);
                     }
                     else{
-                        printf("/3/");
-                        printf(" k3=(%i\n)", k);
-                        printf(" len1=(%i\n)", len);
                         while(k <= len-1){
                         if(smth[k] == '+' || smth[k] == '-' || smth[k] == '*' || smth[k] == '/' || smth[k] == '^' || smth[k] == '!'|| smth[k] == '#'){
-                            printf("{%c\n}", smth[k]);
-                            printf("/4/");
                             if (smth[k] == '#') {
-                                k++;
-                                printf("break");}
+                                k++;}
                             else{
                                 if(smth[k] != '!'){
-                                    printf("/5/");
                                     elem2 = pop_stack();
                                     elem1 = pop_stack();
-                                    printf(" %f %f", elem1, elem2);
                                     rez = numbers(smth[k], elem1, elem2);
-                                    printf(" %f", rez);
                                     push_stack(rez);
-                                    k += 1;
+                                    k++;
                                     }
                                 else{
-                                    printf("/6/");
                                     elem1 = pop_stack();
                                     rez = numbers(smth[k], elem1, elem2);
-                                    printf(" %f", rez);
                                     push_stack(rez);
-                                    k += 1;
+                                    k++;
                                 }
                             }
                         }
-                        else{k += 1;}
+                        else{k++;}
                         }
                     }
 
                     cut = strtok (NULL, lol);
                 }
                 k = 0;
-                printf("/9/");
                 smth = getElement();
                 len = strlen(smth);
-                printf(smth);
-
-                printf("COUNT %i", counting);
         }
     }
         output = fopen(outFile, "w");
-        printf("/@/");
         while (head_stack != NULL){
+            m++;
             elem3 = pop_stack();
-            fprintf(output, "Result: %.2f\n", elem3);
-        }
+            a[m] = elem3;}
+        for(k=m; k >= 0; k--) {
+            fprintf(output, "Result: %.2f\n", a[k]);}
         fclose(output);
-
-    fclose(input);
+        fclose(input);
 }
 
 
