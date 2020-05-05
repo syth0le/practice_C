@@ -58,52 +58,71 @@ int main(void) {
     while(counting != 0){
         printf("/2/");
         smth = getElement();
-        //printf(smth);
+        len = strlen(smth);
+        counting--;
+        printf(smth);
 
-        while (smth != NULL){
+        while (counting != 0){
+                counting--;
                 cut = strtok(smth,lol);
-                len += strlen(cut);
-                k += (len / 2) + 1;
-
+                printf(" len_main=(%i\n)", len);
                 while (cut != NULL)
                 {
 
+                    printf(" k1=(%i\n)", k);
                     int i = 0;
                     elem1 = strtof(cut, NULL);
                     if (elem1 != 0){
-                        k += 2;
                         push_stack(elem1);
                         i++;
+                        printf(" k2=(%i\n)", k);
                     }
                     else{
                         printf("/3/");
-                        printf("{%c\n}", smth[k]);
-                        if (smth[k] == '#') {
-                            k = 0;
-                            printf("break");
-                            break;}
-                        else if(smth[k] == '+' || smth[k] == '-' || smth[k] == '*' || smth[k] == '/' || smth[k] == '^' || smth[k] == '!'){
+                        printf(" k3=(%i\n)", k);
+                        printf(" len1=(%i\n)", len);
+                        while(k <= len-1){
+                        if(smth[k] == '+' || smth[k] == '-' || smth[k] == '*' || smth[k] == '/' || smth[k] == '^' || smth[k] == '!'|| smth[k] == '#'){
+                            printf("{%c\n}", smth[k]);
                             printf("/4/");
-                            if(smth[k] != '!'){
-                                printf("/5/");
-                             elem2 = pop_stack();
-                             elem1 = pop_stack();
-                            }else{
-                                printf("/6/");
-                             elem1 = pop_stack();}
-                            printf("/7/");
-                            rez = numbers(smth[k], elem1, elem2);
-                            push_stack(rez);
-                            k += 2;
+                            if (smth[k] == '#') {
+                                k++;
+                                printf("break");}
+                            else{
+                                if(smth[k] != '!'){
+                                    printf("/5/");
+                                    elem2 = pop_stack();
+                                    elem1 = pop_stack();
+                                    printf(" %f %f", elem1, elem2);
+                                    rez = numbers(smth[k], elem1, elem2);
+                                    printf(" %f", rez);
+                                    push_stack(rez);
+                                    k += 1;
+                                    }
+                                else{
+                                    printf("/6/");
+                                    elem1 = pop_stack();
+                                    rez = numbers(smth[k], elem1, elem2);
+                                    printf(" %f", rez);
+                                    push_stack(rez);
+                                    k += 1;
+                                }
                             }
+                        }
+                        else{k += 1;}
+                        }
                     }
+
                     cut = strtok (NULL, lol);
                 }
-            printf("/9/");
-            smth = getElement();
-            k = 0;
+                k = 0;
+                printf("/9/");
+                smth = getElement();
+                len = strlen(smth);
+                printf(smth);
+
+                printf("COUNT %i", counting);
         }
-        counting -= 1;
     }
         output = fopen(outFile, "w");
         printf("/@/");
