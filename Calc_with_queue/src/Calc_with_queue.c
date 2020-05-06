@@ -8,7 +8,7 @@
     | 4 5 -       | File must be filled using reverse polish notation instructions for number's operations. Let's for example describe second line:
     | 7 2 3 * -   |  1) first operation will be multiplication between 2 and 3: 2*3 = 6. 2) Second one will be subtraction between 7 and 6: 7-6 = 1.
     | 2 !         |  Finally we get the result 1. - this number will be added to stack for the following writing to output file.
-    | #           |  WARNING! for correct calc work, please, type # into end line. This symbol means end for reading from input file.
+    | #           |  WARNING! for correct calc work, please, type # into end line. This symbol means end of reading from input file.
     That's all. Follow program instructions (enter input and output files, which must be in such repository as main program file) and get needful result.
  ============================================================================
  */
