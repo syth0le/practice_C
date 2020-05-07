@@ -1,0 +1,8 @@
+Result: 3.00
+Result: -1.00
+Result: 30.00
+Result: 0.86
+Result: 40320.00
+Result: 81.00
+Result: -3.00
+Result: 1.00

@@ -1,11 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "stackOperations.h"
-
-
-typedef struct rez_stack{
-    float result;
-    struct rez_stack *res_last;
-}rez_stack;
 
 rez_stack *head_stack = NULL;
 

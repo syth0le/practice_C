@@ -1,12 +1,7 @@
 #include <stdio.h>
 #include "queueOperations.h"
 
-typedef struct command_list{
-    char string[30];
-    struct command_list *next;
-}queue;
-
-queue *head = NULL;
+queue *head_q = NULL;
 queue *tail = NULL;
 
 int putElement(FILE *input){
@@ -17,7 +12,7 @@ int putElement(FILE *input){
         tail->next = tmp;
         tail = tmp;
     } else{
-        head = tmp;
+        head_q = tmp;
         tail = tmp;
     }
     return 1;
@@ -25,10 +20,10 @@ int putElement(FILE *input){
 
 
 char *getElement(void){
-    if(head != NULL) {
+    if(head_q != NULL) {
         char *data;
-        data = head->string;
-        head = head->next;
+        data = head_q->string;
+        head_q = head_q->next;
         return data;
     } else{return NULL;}
 }

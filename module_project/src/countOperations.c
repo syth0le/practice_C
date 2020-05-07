@@ -48,29 +48,36 @@ float factorial(float number){
     return rez;
 }
 
-float vectors(int size, char sign, float *vector1, float *vector2){
-    float result;
-    float *result_u;
-
-    switch (sign) {
-
-       case '+':
-           for (int i = 0; i < size; i++){
-               result_u[i] = vector1[i] + vector2[i];}
-           return result_u;
-
-       case '-':
-           for (int i = 0; i < size; i++){
-               result_u[i] = vector1[i] + vector2[i];}
-           return result_u;
-
-       case '*':
-           for (int i = 0; i < size; i++) {
-               result += vector1[i] * vector2[i];}
-           return result;
-
-       default:
-           return 0;
-   }
+float *vectors(char sign, int size, float *vector1, float *vector2){
+    float *res_vect;
+    switch (sign){
+        case '+':
+            res_vect = malloc(size * sizeof(float));
+            for (int i = 0; i < size; i++)
+            {
+                res_vect[i] = vector1[i] + vector2[i];
+            }
+            return res_vect;
+        case '-':
+            res_vect = malloc(size * sizeof(float));
+            for (int i = 0; i < size; i++)
+            {
+                res_vect[i] = vector1[i] - vector2[i];
+            }
+            return res_vect;
+        case '*':
+            res_vect = malloc(1 * sizeof(float));
+            res_vect[0] = 0;
+            for (int i = 0; i < size; i++)
+            {
+                res_vect[0] = res_vect[0] + (vector1[i] * vector2[i]);
+            }
+            return res_vect;
+        }
+    return vector1;
+    return vector2;
+    free(vector1);
+    free(vector2);
+    free(res_vect);
 }
 

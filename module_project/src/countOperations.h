@@ -3,7 +3,7 @@
 
 float numbers(char oper, float a, float b);
 float factorial(float number);
-float vectors(int size, char sign, float *vector1, float *vector2); // переписать
+float *vectors(char sign, int size, float *vector1, float *vector2);
 
 
 #endif /* COUNTOPERATIONS_H_ */
