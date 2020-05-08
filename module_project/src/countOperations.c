@@ -1,5 +1,6 @@
 #include "countOperations.h"
 
+// function of different numbers operations.
 float numbers(char oper, float a, float b){
     float rez;
     float var1, var2;
@@ -39,6 +40,7 @@ float numbers(char oper, float a, float b){
     }
 }
 
+// function counting factorial of number.
 float factorial(float number){
     float rez;
     int var1 = 1;
@@ -48,6 +50,7 @@ float factorial(float number){
     return rez;
 }
 
+// function of different vectors operations.
 float *vectors(char sign, int size, float *vector1, float *vector2){
     float *res_vect;
     switch (sign){

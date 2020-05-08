@@ -3,6 +3,8 @@
 #include "stdlib.h"
 
 
+// function adding needful numbers to our created structure
+// it reads instructions from input file and creates list with predefined actions
 void addelement(input_data *current, FILE *input){
     input_data *tmp = malloc(1 * sizeof(input_data));
     fscanf(input, " %c %c", &tmp->sign, &tmp->operation);
@@ -40,6 +42,8 @@ void addelement_res(output_data *current_res, input_data *current)
     current_res->res_next = tmp_res;
 }
 
+
+//This function was made for reading pointer of number and adding him to variable
 float *addnumber(FILE *input, int size){
     float *number;
     number = malloc(size * sizeof(float));
@@ -50,6 +54,7 @@ float *addnumber(FILE *input, int size){
     return number;
 }
 
+// function for counting simple numbers with memory allocation.
 float *numbers_list(char sign, float *firstNum, float *secondNum){
     float *res_num;
     float var1, var2;

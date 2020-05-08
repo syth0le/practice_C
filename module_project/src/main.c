@@ -1,10 +1,23 @@
 /*
  ============================================================================
  Name        : module_project.c
- Author      : sythole
- Version     :
- Copyright   : my and only my
- Description :
+ Author      : syth0le
+ Version     : 1.1 -adding documentation.
+ Copyright   : my and only my.
+ Description : This calculator has realized by modules. There are all needful functions, methods placed by files.
+ 1 - countigOperations - working with simple numbers operations and vectors.
+ 2 - queueOperations - working with queue.
+ 3 - stackOperations - includes functions which works with stacks.
+ 4 - listOperations - code-file which include functions working lists.
+ NOTICE! For correct main file work there was created 2 modes: console and file inputs.
+ Program suggested u modes and u can do needful choice.
+ There are created 2 calc realizations in file mode: 1) q - queue and stack version 2) l - list version.
+ FOR EACH NEEDFUL INPUT FILES WERE CREATED:
+ >>>>> 1) input_q.txt - for queue and stack ver. (output_q.txt - output file)
+ >>>>> 2) input_l.txt - for list ver. (output_l.txt - output file)
+ Be attentive when work with files mode.
+ 1)-queue and stack version use reverse polish notation instructions.(works only with numbers)
+ 2)-list version use simple instructions like ((* v 2 3 4 5 6) - for vectors, (+ s 23 56) - for numbers)
  ============================================================================
  */
 
@@ -27,13 +40,15 @@ int main(void) {
     FILE *input, *output;
     input_data *head, *current;
     output_data *head_result, *current_result;
-    ///////////////////
+
     printf("Choose mode type c - console, f - file: ");
     scanf(" %c", &mode);
 
     switch(mode){
 
         case 'c':
+
+            // console mode realization
             while(turn_on != 0){
                 printf("Choose calc. version");
                 printf("\nn - numbers, v - vectors: ");
@@ -58,6 +73,7 @@ int main(void) {
                         break;
 
                     case 'v':
+
                         //choosing coordinate system
                         printf("Type vector's size: ");
                         scanf("%i", &size);
@@ -121,8 +137,10 @@ int main(void) {
                 scanf(" %i", &turn_on);
             }
             break;
+
         case 'f':
 
+            // file reading mode realization.
             printf("Choose calc. version");
             printf("\nq - queue and stack, l - list: ");
             scanf(" %c", &version);
@@ -133,6 +151,7 @@ int main(void) {
             input = fopen(inFile , "r");
             switch(version){
 
+                // version with stack and queue.
                 case 'q':
                     // read from file strings to queue until file end.
                     while(!feof(input)){
@@ -213,6 +232,7 @@ int main(void) {
                         break;
 
 ///////////////////////////////////////////////////////////////
+                // version with lists.
                 case 'l':
                     if(!feof(input)){
                         // it works until the end of input file appeared

@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include "stackOperations.h"
 
+//announce top of the stack.
 rez_stack *head_stack = NULL;
 
+// function of adding element to stack.
 void push_stack(float element){
     rez_stack *tmp_stack = malloc(1* sizeof(rez_stack));
     tmp_stack->result = element;
@@ -16,6 +18,7 @@ void push_stack(float element){
     }
 }
 
+// function of getting element from the stack.
 float pop_stack(void){
     rez_stack *tmp;
     float data;

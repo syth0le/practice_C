@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include "queueOperations.h"
 
+
+//announce work indicators
 queue *head_q = NULL;
 queue *tail = NULL;
 
+// function of putting string to queue from input file.
 int putElement(FILE *input){
     queue *tmp = malloc(1 * sizeof(queue));
     fgets(tmp->string, sizeof(tmp->string), input);
@@ -18,7 +21,7 @@ int putElement(FILE *input){
     return 1;
 }
 
-
+// function of getting string from queue for the following work operations.
 char *getElement(void){
     if(head_q != NULL) {
         char *data;
