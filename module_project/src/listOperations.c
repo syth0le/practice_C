@@ -1,6 +1,6 @@
 #include "listOperations.h"
 #include "countOperations.h"
-#include "stdlib.h"
+#include <stdlib.h>
 
 
 // function adding needful numbers to our created structure
@@ -96,10 +96,8 @@ float *numbers_list(char sign, float *firstNum, float *secondNum){
             {var1 = var1 * i;}
             res_num[0] = var1;
             return res_num;
+
+        default:
+            return firstNum;
     }
-    return firstNum;
-    return secondNum;
-    free(firstNum);  // return needful results after counting and free all temporary vars.
-    free(secondNum);
-    free(res_num);
 }

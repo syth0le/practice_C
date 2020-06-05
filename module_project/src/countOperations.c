@@ -1,4 +1,5 @@
 #include "countOperations.h"
+#include <stdlib.h>
 
 // function of different numbers operations.
 float numbers(char oper, float a, float b){
@@ -76,11 +77,8 @@ float *vectors(char sign, int size, float *vector1, float *vector2){
                 res_vect[0] = res_vect[0] + (vector1[i] * vector2[i]);
             }
             return res_vect;
+        default:
+            return vector1;
         }
-    return vector1;
-    return vector2;
-    free(vector1);
-    free(vector2);
-    free(res_vect);
 }
 
